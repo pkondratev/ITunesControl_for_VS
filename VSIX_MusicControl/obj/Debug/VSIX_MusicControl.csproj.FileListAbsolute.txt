@@ -93,3 +93,6 @@ D:\Projects\Visual Studio 2017 Projects\VSIX_MusicControl\VSIX_MusicControl\obj\
 D:\Projects\Visual Studio 2017 Projects\VSIX_MusicControl\VSIX_MusicControl\obj\Debug\Interop.iTunesAdminLib.dll
 D:\Projects\Visual Studio 2017 Projects\VSIX_MusicControl\VSIX_MusicControl\obj\Debug\Interop.iTunesLib.dll
 D:\Projects\Visual Studio 2017 Projects\VSIX_MusicControl\VSIX_MusicControl\obj\Debug\VSIX_MusicControl.csproj.ResolveComReference.cache
+D:\Projects\Visual Studio 2017 Projects\VSIX_MusicControl\VSIX_MusicControl\bin\Debug\Resources\Icon.png
+D:\Projects\Visual Studio 2017 Projects\VSIX_MusicControl\VSIX_MusicControl\bin\Debug\Resources\PlayCommand.png
+D:\Projects\Visual Studio 2017 Projects\VSIX_MusicControl\VSIX_MusicControl\bin\Debug\Resources\PlayCommandPackage.ico
