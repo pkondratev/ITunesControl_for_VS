@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!--This is the file that defines the IDs for all the commands exposed by VisualStudio. -->
+  <Extern href="stdidcmd.h"/>
+
+  <!--This header contains the command ids for the menus provided by the shell. -->
+  <Extern href="vsshlids.h"/>
+
+  <Commands package="guidPlayCommandPackage">
+
+    <Menus>
+      <Menu guid="guidPlayCommandPackageCmdSet" id="MyToolbar" priority="0x0000" type="Toolbar">
+        <Strings>
+          <ButtonText>ITunes control Toolbar by PK</ButtonText>
+        </Strings>
+      </Menu>
+    </Menus>
+
+    <Groups>
+
+      <Group guid="guidPlayCommandPackageCmdSet" id="MyToolbarGroup" priority="0xFF45">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_EDIT"/>
+      </Group>
+
+    </Groups>
+
+    <Buttons>
+
+      <Button guid="guidPlayCommandPackageCmdSet" id="Music_Text" priority="0x0100" type="Button">
+        <Parent guid="guidPlayCommandPackageCmdSet" id="MyToolbarGroup" />
+        <CommandFlag>DefaultDisabled</CommandFlag>
+        <Strings>
+          <ButtonText>ITunes: </ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidPlayCommandPackageCmdSet" id="PlayPauseCommandId" priority="0x0102" type="Button">
+        <Parent guid="guidPlayCommandPackageCmdSet" id="MyToolbarGroup" />
+        <Icon guid="guidImages" id="PlayPic"/>
+        <Strings>
+          <ButtonText>Play/Pause</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidPlayCommandPackageCmdSet" id="PrevCommand" priority="0x0101" type="Button">
+        <Parent guid="guidPlayCommandPackageCmdSet" id="MyToolbarGroup" />
+        <Icon guid="guidImages" id="PrevPic"/>
+        <Strings>
+          <ButtonText>Previous song</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidPlayCommandPackageCmdSet" id="NextCommand" priority="0x0103" type="Button">
+        <Parent guid="guidPlayCommandPackageCmdSet" id="MyToolbarGroup" />
+        <Icon guid="guidImages" id="NextPic"/>
+        <Strings>
+          <ButtonText>Next song</ButtonText>
+        </Strings>
+      </Button>
+
+    </Buttons>
+
+    <Bitmaps>
+      <Bitmap guid="guidImages" href="Resources\PlayCommand.png" usedList="PrevPic, PlayPic, NextPic"/>
+    </Bitmaps>
+
+  </Commands>
+
+  <CommandPlacements>
+
+    <CommandPlacement guid="guidPlayCommandPackageCmdSet" id="MyToolbarGroup" priority="0x0100">
+      <Parent guid="guidPlayCommandPackageCmdSet" id="MyToolbar"/>
+    </CommandPlacement>
+
+  </CommandPlacements>
+
+  <Symbols>
+    <!-- This is the package guid. -->
+    <GuidSymbol name="guidPlayCommandPackage" value="{14f93431-803f-447b-843c-f68eba6f84ca}" />
+
+    <!-- This is the guid used to group the menu commands together -->
+    <GuidSymbol name="guidPlayCommandPackageCmdSet" value="{3ad5129b-26dd-4fe7-9d56-aac3109ffb8d}">
+      <IDSymbol name="Music_Text" value="0x0103"/>
+      <IDSymbol name="PlayPauseCommandId" value="0x0100" />
+      <IDSymbol name="PrevCommand" value="0x0101"/>
+      <IDSymbol name="NextCommand" value="0x0102"/>
+
+      <IDSymbol name="MyToolbar" value="0x1000"/>
+      <IDSymbol name="MyToolbarGroup" value="0x1030"/>
+    </GuidSymbol>
+
+    <GuidSymbol name="guidImages" value="{b7d5d3ed-75d4-4740-8e03-ef24aa602738}" >
+      <IDSymbol name="PrevPic" value="1" />
+      <IDSymbol name="PlayPic" value="2" />
+      <IDSymbol name="NextPic" value="3" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
