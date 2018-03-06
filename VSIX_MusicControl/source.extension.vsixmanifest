@@ -4,6 +4,7 @@
         <Identity Id="bb1e67de-7386-414b-bb09-67bcd8994d9a" Version="0.0.1" Language="en-US" Publisher="Pavel Kondratiev" />
         <DisplayName>ITunes toolbar for VS</DisplayName>
         <Description xml:space="preserve">Toolbar to control music in ITunes for Windows, allow to switch tracks and stop|start it.</Description>
+        <License>LICENSE.txt</License>
         <Icon>Resources\PlayCommandPackage.ico</Icon>
         <PreviewImage>Resources\Icon.png</PreviewImage>
         <Tags>ITunes, Music, Control, Toolbar</Tags>
